@@ -1,1 +1,1 @@
-# AlgorithmStudy
+# 코테 합격을 향하여..
