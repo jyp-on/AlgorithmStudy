@@ -2,7 +2,7 @@ import sys
 import heapq as hq
 input = sys.stdin.readline
 heap = []
-N = int(input()) #연산의 개수
+N = int(input()) #연산의 개수.
 
 for _ in range(N):
     tmp = int(input())
