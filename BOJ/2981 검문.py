@@ -1,4 +1,4 @@
-import sys
+import sys, math
 input = sys.stdin.readline
 
 N = []
@@ -14,7 +14,4 @@ def find(i):
     if len(temp)==1:
         print(i, end= ' ')
 
-
-for i in range(2, int(min(N)+1)):
-    find(i)
 
