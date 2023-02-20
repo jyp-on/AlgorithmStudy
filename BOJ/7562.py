@@ -4,7 +4,7 @@ input = sys.stdin.readline
 
 dx = [2, 2, -2, -2, 1, -1, 1, -1]
 dy = [-1, 1, -1, 1, -2, -2, 2, 2]
-def bfs(x, y, e_x, e_y):
+def bfs(x, y):
     visited[y][x] = 1
     q = deque()
     q.append((y, x))
@@ -27,5 +27,5 @@ for i in range(T):
     visited = [[0]*l for _ in range(l)]
     s_x, s_y = map(int, input().split()) # 시작
     e_x, e_y = map(int, input().split()) # 목표
-    bfs(s_x, s_y, e_x, e_y)
+    bfs(s_x, s_y)
     print(graph[e_y][e_x])
